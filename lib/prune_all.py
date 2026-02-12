@@ -80,8 +80,9 @@ def find_layers(module, layers=[nn.Linear], name=''):
 def check_sparsity(model):
     use_cache = model.config.use_cache 
     model.config.use_cache = False 
-
+##Mukund
     layers = model.model.layers
+##Mukund
     count = 0 
     total_params = 0
     for i in range(len(layers)):

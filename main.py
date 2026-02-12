@@ -15,6 +15,7 @@ print('# of gpus: ', torch.cuda.device_count())
 import json
 import logging
 import math
+from datetime import datetime, timezone
 
 import random
 from itertools import chain
@@ -61,6 +62,45 @@ def get_llm(model, cache_dir="llm_weights"):
 
     model.seqlen = 2048
     return model
+
+def get_transformer_layers(model):
+    if hasattr(model, "model") and hasattr(model.model, "layers"):
+        return model.model.layers
+    if hasattr(model, "model") and hasattr(model.model, "decoder") and hasattr(model.model.decoder, "layers"):
+        return model.model.decoder.layers
+    raise AttributeError("Could not locate transformer layers on this model")
+
+
+## Mukund
+def compute_layerwise_sparsity(model):
+    use_cache = model.config.use_cache
+    model.config.use_cache = False
+
+    layerwise = []
+    layers = get_transformer_layers(model)
+
+    for i, layer in enumerate(layers):
+        subset = find_layers(layer)
+        zero_params = 0
+        total_params = 0
+        for name in subset:
+            W = subset[name].weight.data
+            zero_params += (W == 0).sum().item()
+            total_params += W.numel()
+
+        layer_sparsity = float(zero_params) / float(total_params) if total_params > 0 else 0.0
+        layerwise.append(
+            {
+                "layer_index": i,
+                "sparsity_ratio": layer_sparsity,
+                "zero_params": int(zero_params),
+                "total_params": int(total_params),
+            }
+        )
+
+    model.config.use_cache = use_cache
+    return layerwise
+## MUKUND
 
 def main():
 
@@ -390,12 +430,52 @@ def main():
     ################################################################
     ppl = eval_ppl(model, tokenizer, device)
     print(f"ppl on wikitext {ppl}")
+    layerwise_sparsity = compute_layerwise_sparsity(model)
 
     sys.stdout.flush()
 
     # print(f"final ppl on wikitext {ppl}")
 
 
+## MUKUND
+    if args.save:
+        save_path = Path(args.save)
+        save_path.parent.mkdir(parents=True, exist_ok=True)
+
+        result_entry = {
+            "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+            "model": args.model,
+            "prune_method": args.prune_method,
+            "sparsity_type": args.sparsity_type,
+            "target_sparsity_ratio": args.sparsity_ratio,
+            "actual_sparsity_ratio": float(sparsity_ratio),
+            "layerwise_sparsity": layerwise_sparsity,
+            "nsamples": args.nsamples,
+            "seed": args.seed,
+            "ppl_wikitext": float(ppl),
+            "Lamda": args.Lamda,
+            "Hyper_m": args.Hyper_m,
+            "outlier_by_activation": bool(args.outlier_by_activation),
+            "outlier_by_wmetric": bool(args.outlier_by_wmetric),
+        }
+
+        existing_results = []
+        if save_path.exists() and save_path.stat().st_size > 0:
+            try:
+                with save_path.open("r", encoding="utf-8") as f:
+                    loaded = json.load(f)
+                if isinstance(loaded, list):
+                    existing_results = loaded
+                elif isinstance(loaded, dict):
+                    existing_results = [loaded]
+            except json.JSONDecodeError:
+                print(f"warning: {save_path} contains invalid JSON, overwriting with a new results list")
+
+        existing_results.append(result_entry)
+        with save_path.open("w", encoding="utf-8") as f:
+            json.dump(existing_results, f, indent=2)
+        print(f"results saved to {save_path}")
+## MUKUND
 
     if args.save_model:
         model.save_pretrained(args.save_model)

@@ -80,9 +80,12 @@ def find_layers(module, layers=[nn.Linear], name=''):
 def check_sparsity(model):
     use_cache = model.config.use_cache 
     model.config.use_cache = False 
-##Mukund
-    layers = model.model.layers
-##Mukund
+    if hasattr(model, "model") and hasattr(model.model, "layers"):
+        layers = model.model.layers
+    elif hasattr(model, "model") and hasattr(model.model, "decoder") and hasattr(model.model.decoder, "layers"):
+        layers = model.model.decoder.layers
+    else:
+        raise AttributeError("Could not locate transformer layers for sparsity check")
     count = 0 
     total_params = 0
     for i in range(len(layers)):

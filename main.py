@@ -100,6 +100,40 @@ def compute_layerwise_sparsity(model):
 
     model.config.use_cache = use_cache
     return layerwise
+
+
+def compute_layerwise_submodule_sparsity(model):
+    use_cache = model.config.use_cache
+    model.config.use_cache = False
+
+    layerwise = []
+    layers = get_transformer_layers(model)
+    for i, layer in enumerate(layers):
+        subset = find_layers(layer)
+        submodules = []
+        for name in sorted(subset.keys()):
+            W = subset[name].weight.data
+            zero_params = int((W == 0).sum().item())
+            total_params = int(W.numel())
+            sparsity_ratio = float(zero_params) / float(total_params) if total_params > 0 else 0.0
+            submodules.append(
+                {
+                    "submodule": name,
+                    "sparsity_ratio": sparsity_ratio,
+                    "zero_params": zero_params,
+                    "total_params": total_params,
+                    "pruned_percent": sparsity_ratio * 100.0,
+                }
+            )
+        layerwise.append(
+            {
+                "layer_index": i,
+                "submodules": submodules,
+            }
+        )
+
+    model.config.use_cache = use_cache
+    return layerwise
 ## MUKUND
 
 def main():
@@ -431,6 +465,7 @@ def main():
     ppl = eval_ppl(model, tokenizer, device)
     print(f"ppl on wikitext {ppl}")
     layerwise_sparsity = compute_layerwise_sparsity(model)
+    layerwise_submodule_sparsity = compute_layerwise_submodule_sparsity(model)
 
     sys.stdout.flush()
 
@@ -450,6 +485,7 @@ def main():
             "target_sparsity_ratio": args.sparsity_ratio,
             "actual_sparsity_ratio": float(sparsity_ratio),
             "layerwise_sparsity": layerwise_sparsity,
+            "layerwise_submodule_sparsity": layerwise_submodule_sparsity,
             "nsamples": args.nsamples,
             "seed": args.seed,
             "ppl_wikitext": float(ppl),

@@ -1,0 +1,10 @@
+python analyze_activation_outliers.py \
+  --model meta-llama/Llama-2-7b-hf \
+  --nsamples 10 \
+  --seqlen 2048 \
+  --seed 0 \
+  --threshold_mode mean \
+  --threshold_scale 3.0 \
+  --per_sample \
+  --max_samples 10 \
+  --output_dir save_test/outlier_analysis_llama7b_c4_per_sample_unique_seq_len_2048

@@ -1,0 +1,1717 @@
+[
+  {
+    "timestamp_utc": "2026-02-14T09:03:50.647836+00:00",
+    "model": "facebook/opt-6.7b",
+    "prune_method": "wanda_owl",
+    "sparsity_type": "unstructured",
+    "target_sparsity_ratio": 0.7,
+    "actual_sparsity_ratio": 0.6999009450276693,
+    "layerwise_sparsity": [
+      {
+        "layer_index": 0,
+        "sparsity_ratio": 0.5732625325520834,
+        "zero_params": 115412992,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 1,
+        "sparsity_ratio": 0.63897705078125,
+        "zero_params": 128643072,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 2,
+        "sparsity_ratio": 0.651123046875,
+        "zero_params": 131088384,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 3,
+        "sparsity_ratio": 0.6540934244791666,
+        "zero_params": 131686400,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 4,
+        "sparsity_ratio": 0.6487019856770834,
+        "zero_params": 130600960,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 5,
+        "sparsity_ratio": 0.6584879557291666,
+        "zero_params": 132571136,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 6,
+        "sparsity_ratio": 0.6714274088541666,
+        "zero_params": 135176192,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 7,
+        "sparsity_ratio": 0.6792399088541666,
+        "zero_params": 136749056,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 8,
+        "sparsity_ratio": 0.68780517578125,
+        "zero_params": 138473472,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 9,
+        "sparsity_ratio": 0.693603515625,
+        "zero_params": 139640832,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 10,
+        "sparsity_ratio": 0.6997477213541666,
+        "zero_params": 140877824,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 11,
+        "sparsity_ratio": 0.7019246419270834,
+        "zero_params": 141316096,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 12,
+        "sparsity_ratio": 0.70660400390625,
+        "zero_params": 142258176,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 13,
+        "sparsity_ratio": 0.70947265625,
+        "zero_params": 142835712,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 14,
+        "sparsity_ratio": 0.70977783203125,
+        "zero_params": 142897152,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 15,
+        "sparsity_ratio": 0.7109578450520834,
+        "zero_params": 143134720,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 16,
+        "sparsity_ratio": 0.7148640950520834,
+        "zero_params": 143921152,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 17,
+        "sparsity_ratio": 0.7160847981770834,
+        "zero_params": 144166912,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 18,
+        "sparsity_ratio": 0.71826171875,
+        "zero_params": 144605184,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 19,
+        "sparsity_ratio": 0.7195027669270834,
+        "zero_params": 144855040,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 20,
+        "sparsity_ratio": 0.72222900390625,
+        "zero_params": 145403904,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 21,
+        "sparsity_ratio": 0.7251383463541666,
+        "zero_params": 145989632,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 22,
+        "sparsity_ratio": 0.72686767578125,
+        "zero_params": 146337792,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 23,
+        "sparsity_ratio": 0.72802734375,
+        "zero_params": 146571264,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 24,
+        "sparsity_ratio": 0.7314453125,
+        "zero_params": 147259392,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 25,
+        "sparsity_ratio": 0.7324625651041666,
+        "zero_params": 147464192,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 26,
+        "sparsity_ratio": 0.73321533203125,
+        "zero_params": 147615744,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 27,
+        "sparsity_ratio": 0.73321533203125,
+        "zero_params": 147615744,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 28,
+        "sparsity_ratio": 0.7324625651041666,
+        "zero_params": 147464192,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 29,
+        "sparsity_ratio": 0.7307332356770834,
+        "zero_params": 147116032,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 30,
+        "sparsity_ratio": 0.72711181640625,
+        "zero_params": 146386944,
+        "total_params": 201326592
+      },
+      {
+        "layer_index": 31,
+        "sparsity_ratio": 0.7100016276041666,
+        "zero_params": 142942208,
+        "total_params": 201326592
+      }
+    ],
+    "layerwise_submodule_sparsity": [
+      {
+        "layer_index": 0,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.5732421875,
+            "zero_params": 38469632,
+            "total_params": 67108864,
+            "pruned_percent": 57.32421875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.57330322265625,
+            "zero_params": 38473728,
+            "total_params": 67108864,
+            "pruned_percent": 57.330322265625
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.5732421875,
+            "zero_params": 9617408,
+            "total_params": 16777216,
+            "pruned_percent": 57.32421875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.5732421875,
+            "zero_params": 9617408,
+            "total_params": 16777216,
+            "pruned_percent": 57.32421875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.5732421875,
+            "zero_params": 9617408,
+            "total_params": 16777216,
+            "pruned_percent": 57.32421875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.5732421875,
+            "zero_params": 9617408,
+            "total_params": 16777216,
+            "pruned_percent": 57.32421875
+          }
+        ]
+      },
+      {
+        "layer_index": 1,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.638916015625,
+            "zero_params": 42876928,
+            "total_params": 67108864,
+            "pruned_percent": 63.8916015625
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.63909912109375,
+            "zero_params": 42889216,
+            "total_params": 67108864,
+            "pruned_percent": 63.909912109375
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.638916015625,
+            "zero_params": 10719232,
+            "total_params": 16777216,
+            "pruned_percent": 63.8916015625
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.638916015625,
+            "zero_params": 10719232,
+            "total_params": 16777216,
+            "pruned_percent": 63.8916015625
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.638916015625,
+            "zero_params": 10719232,
+            "total_params": 16777216,
+            "pruned_percent": 63.8916015625
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.638916015625,
+            "zero_params": 10719232,
+            "total_params": 16777216,
+            "pruned_percent": 63.8916015625
+          }
+        ]
+      },
+      {
+        "layer_index": 2,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.651123046875,
+            "zero_params": 43696128,
+            "total_params": 67108864,
+            "pruned_percent": 65.1123046875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.651123046875,
+            "zero_params": 43696128,
+            "total_params": 67108864,
+            "pruned_percent": 65.1123046875
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.651123046875,
+            "zero_params": 10924032,
+            "total_params": 16777216,
+            "pruned_percent": 65.1123046875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.651123046875,
+            "zero_params": 10924032,
+            "total_params": 16777216,
+            "pruned_percent": 65.1123046875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.651123046875,
+            "zero_params": 10924032,
+            "total_params": 16777216,
+            "pruned_percent": 65.1123046875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.651123046875,
+            "zero_params": 10924032,
+            "total_params": 16777216,
+            "pruned_percent": 65.1123046875
+          }
+        ]
+      },
+      {
+        "layer_index": 3,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.654052734375,
+            "zero_params": 43892736,
+            "total_params": 67108864,
+            "pruned_percent": 65.4052734375
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.6541748046875,
+            "zero_params": 43900928,
+            "total_params": 67108864,
+            "pruned_percent": 65.41748046875
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.654052734375,
+            "zero_params": 10973184,
+            "total_params": 16777216,
+            "pruned_percent": 65.4052734375
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.654052734375,
+            "zero_params": 10973184,
+            "total_params": 16777216,
+            "pruned_percent": 65.4052734375
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.654052734375,
+            "zero_params": 10973184,
+            "total_params": 16777216,
+            "pruned_percent": 65.4052734375
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.654052734375,
+            "zero_params": 10973184,
+            "total_params": 16777216,
+            "pruned_percent": 65.4052734375
+          }
+        ]
+      },
+      {
+        "layer_index": 4,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.648681640625,
+            "zero_params": 43532288,
+            "total_params": 67108864,
+            "pruned_percent": 64.8681640625
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.64874267578125,
+            "zero_params": 43536384,
+            "total_params": 67108864,
+            "pruned_percent": 64.874267578125
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.648681640625,
+            "zero_params": 10883072,
+            "total_params": 16777216,
+            "pruned_percent": 64.8681640625
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.648681640625,
+            "zero_params": 10883072,
+            "total_params": 16777216,
+            "pruned_percent": 64.8681640625
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.648681640625,
+            "zero_params": 10883072,
+            "total_params": 16777216,
+            "pruned_percent": 64.8681640625
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.648681640625,
+            "zero_params": 10883072,
+            "total_params": 16777216,
+            "pruned_percent": 64.8681640625
+          }
+        ]
+      },
+      {
+        "layer_index": 5,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.658447265625,
+            "zero_params": 44187648,
+            "total_params": 67108864,
+            "pruned_percent": 65.8447265625
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.6585693359375,
+            "zero_params": 44195840,
+            "total_params": 67108864,
+            "pruned_percent": 65.85693359375
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.658447265625,
+            "zero_params": 11046912,
+            "total_params": 16777216,
+            "pruned_percent": 65.8447265625
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.658447265625,
+            "zero_params": 11046912,
+            "total_params": 16777216,
+            "pruned_percent": 65.8447265625
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.658447265625,
+            "zero_params": 11046912,
+            "total_params": 16777216,
+            "pruned_percent": 65.8447265625
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.658447265625,
+            "zero_params": 11046912,
+            "total_params": 16777216,
+            "pruned_percent": 65.8447265625
+          }
+        ]
+      },
+      {
+        "layer_index": 6,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.67138671875,
+            "zero_params": 45056000,
+            "total_params": 67108864,
+            "pruned_percent": 67.138671875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.6715087890625,
+            "zero_params": 45064192,
+            "total_params": 67108864,
+            "pruned_percent": 67.15087890625
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.67138671875,
+            "zero_params": 11264000,
+            "total_params": 16777216,
+            "pruned_percent": 67.138671875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.67138671875,
+            "zero_params": 11264000,
+            "total_params": 16777216,
+            "pruned_percent": 67.138671875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.67138671875,
+            "zero_params": 11264000,
+            "total_params": 16777216,
+            "pruned_percent": 67.138671875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.67138671875,
+            "zero_params": 11264000,
+            "total_params": 16777216,
+            "pruned_percent": 67.138671875
+          }
+        ]
+      },
+      {
+        "layer_index": 7,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.67919921875,
+            "zero_params": 45580288,
+            "total_params": 67108864,
+            "pruned_percent": 67.919921875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.6793212890625,
+            "zero_params": 45588480,
+            "total_params": 67108864,
+            "pruned_percent": 67.93212890625
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.67919921875,
+            "zero_params": 11395072,
+            "total_params": 16777216,
+            "pruned_percent": 67.919921875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.67919921875,
+            "zero_params": 11395072,
+            "total_params": 16777216,
+            "pruned_percent": 67.919921875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.67919921875,
+            "zero_params": 11395072,
+            "total_params": 16777216,
+            "pruned_percent": 67.919921875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.67919921875,
+            "zero_params": 11395072,
+            "total_params": 16777216,
+            "pruned_percent": 67.919921875
+          }
+        ]
+      },
+      {
+        "layer_index": 8,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.687744140625,
+            "zero_params": 46153728,
+            "total_params": 67108864,
+            "pruned_percent": 68.7744140625
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.68792724609375,
+            "zero_params": 46166016,
+            "total_params": 67108864,
+            "pruned_percent": 68.792724609375
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.687744140625,
+            "zero_params": 11538432,
+            "total_params": 16777216,
+            "pruned_percent": 68.7744140625
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.687744140625,
+            "zero_params": 11538432,
+            "total_params": 16777216,
+            "pruned_percent": 68.7744140625
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.687744140625,
+            "zero_params": 11538432,
+            "total_params": 16777216,
+            "pruned_percent": 68.7744140625
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.687744140625,
+            "zero_params": 11538432,
+            "total_params": 16777216,
+            "pruned_percent": 68.7744140625
+          }
+        ]
+      },
+      {
+        "layer_index": 9,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.693603515625,
+            "zero_params": 46546944,
+            "total_params": 67108864,
+            "pruned_percent": 69.3603515625
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.693603515625,
+            "zero_params": 46546944,
+            "total_params": 67108864,
+            "pruned_percent": 69.3603515625
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.693603515625,
+            "zero_params": 11636736,
+            "total_params": 16777216,
+            "pruned_percent": 69.3603515625
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.693603515625,
+            "zero_params": 11636736,
+            "total_params": 16777216,
+            "pruned_percent": 69.3603515625
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.693603515625,
+            "zero_params": 11636736,
+            "total_params": 16777216,
+            "pruned_percent": 69.3603515625
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.693603515625,
+            "zero_params": 11636736,
+            "total_params": 16777216,
+            "pruned_percent": 69.3603515625
+          }
+        ]
+      },
+      {
+        "layer_index": 10,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.69970703125,
+            "zero_params": 46956544,
+            "total_params": 67108864,
+            "pruned_percent": 69.970703125
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.6998291015625,
+            "zero_params": 46964736,
+            "total_params": 67108864,
+            "pruned_percent": 69.98291015625
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.69970703125,
+            "zero_params": 11739136,
+            "total_params": 16777216,
+            "pruned_percent": 69.970703125
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.69970703125,
+            "zero_params": 11739136,
+            "total_params": 16777216,
+            "pruned_percent": 69.970703125
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.69970703125,
+            "zero_params": 11739136,
+            "total_params": 16777216,
+            "pruned_percent": 69.970703125
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.69970703125,
+            "zero_params": 11739136,
+            "total_params": 16777216,
+            "pruned_percent": 69.970703125
+          }
+        ]
+      },
+      {
+        "layer_index": 11,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.701904296875,
+            "zero_params": 47104000,
+            "total_params": 67108864,
+            "pruned_percent": 70.1904296875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.70196533203125,
+            "zero_params": 47108096,
+            "total_params": 67108864,
+            "pruned_percent": 70.196533203125
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.701904296875,
+            "zero_params": 11776000,
+            "total_params": 16777216,
+            "pruned_percent": 70.1904296875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.701904296875,
+            "zero_params": 11776000,
+            "total_params": 16777216,
+            "pruned_percent": 70.1904296875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.701904296875,
+            "zero_params": 11776000,
+            "total_params": 16777216,
+            "pruned_percent": 70.1904296875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.701904296875,
+            "zero_params": 11776000,
+            "total_params": 16777216,
+            "pruned_percent": 70.1904296875
+          }
+        ]
+      },
+      {
+        "layer_index": 12,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.70654296875,
+            "zero_params": 47415296,
+            "total_params": 67108864,
+            "pruned_percent": 70.654296875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.70672607421875,
+            "zero_params": 47427584,
+            "total_params": 67108864,
+            "pruned_percent": 70.672607421875
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.70654296875,
+            "zero_params": 11853824,
+            "total_params": 16777216,
+            "pruned_percent": 70.654296875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.70654296875,
+            "zero_params": 11853824,
+            "total_params": 16777216,
+            "pruned_percent": 70.654296875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.70654296875,
+            "zero_params": 11853824,
+            "total_params": 16777216,
+            "pruned_percent": 70.654296875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.70654296875,
+            "zero_params": 11853824,
+            "total_params": 16777216,
+            "pruned_percent": 70.654296875
+          }
+        ]
+      },
+      {
+        "layer_index": 13,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.70947265625,
+            "zero_params": 47611904,
+            "total_params": 67108864,
+            "pruned_percent": 70.947265625
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.70947265625,
+            "zero_params": 47611904,
+            "total_params": 67108864,
+            "pruned_percent": 70.947265625
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.70947265625,
+            "zero_params": 11902976,
+            "total_params": 16777216,
+            "pruned_percent": 70.947265625
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.70947265625,
+            "zero_params": 11902976,
+            "total_params": 16777216,
+            "pruned_percent": 70.947265625
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.70947265625,
+            "zero_params": 11902976,
+            "total_params": 16777216,
+            "pruned_percent": 70.947265625
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.70947265625,
+            "zero_params": 11902976,
+            "total_params": 16777216,
+            "pruned_percent": 70.947265625
+          }
+        ]
+      },
+      {
+        "layer_index": 14,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.709716796875,
+            "zero_params": 47628288,
+            "total_params": 67108864,
+            "pruned_percent": 70.9716796875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.70989990234375,
+            "zero_params": 47640576,
+            "total_params": 67108864,
+            "pruned_percent": 70.989990234375
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.709716796875,
+            "zero_params": 11907072,
+            "total_params": 16777216,
+            "pruned_percent": 70.9716796875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.709716796875,
+            "zero_params": 11907072,
+            "total_params": 16777216,
+            "pruned_percent": 70.9716796875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.709716796875,
+            "zero_params": 11907072,
+            "total_params": 16777216,
+            "pruned_percent": 70.9716796875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.709716796875,
+            "zero_params": 11907072,
+            "total_params": 16777216,
+            "pruned_percent": 70.9716796875
+          }
+        ]
+      },
+      {
+        "layer_index": 15,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.7109375,
+            "zero_params": 47710208,
+            "total_params": 67108864,
+            "pruned_percent": 71.09375
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.71099853515625,
+            "zero_params": 47714304,
+            "total_params": 67108864,
+            "pruned_percent": 71.099853515625
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.7109375,
+            "zero_params": 11927552,
+            "total_params": 16777216,
+            "pruned_percent": 71.09375
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.7109375,
+            "zero_params": 11927552,
+            "total_params": 16777216,
+            "pruned_percent": 71.09375
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.7109375,
+            "zero_params": 11927552,
+            "total_params": 16777216,
+            "pruned_percent": 71.09375
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.7109375,
+            "zero_params": 11927552,
+            "total_params": 16777216,
+            "pruned_percent": 71.09375
+          }
+        ]
+      },
+      {
+        "layer_index": 16,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.71484375,
+            "zero_params": 47972352,
+            "total_params": 67108864,
+            "pruned_percent": 71.484375
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.71490478515625,
+            "zero_params": 47976448,
+            "total_params": 67108864,
+            "pruned_percent": 71.490478515625
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.71484375,
+            "zero_params": 11993088,
+            "total_params": 16777216,
+            "pruned_percent": 71.484375
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.71484375,
+            "zero_params": 11993088,
+            "total_params": 16777216,
+            "pruned_percent": 71.484375
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.71484375,
+            "zero_params": 11993088,
+            "total_params": 16777216,
+            "pruned_percent": 71.484375
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.71484375,
+            "zero_params": 11993088,
+            "total_params": 16777216,
+            "pruned_percent": 71.484375
+          }
+        ]
+      },
+      {
+        "layer_index": 17,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.716064453125,
+            "zero_params": 48054272,
+            "total_params": 67108864,
+            "pruned_percent": 71.6064453125
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.71612548828125,
+            "zero_params": 48058368,
+            "total_params": 67108864,
+            "pruned_percent": 71.612548828125
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.716064453125,
+            "zero_params": 12013568,
+            "total_params": 16777216,
+            "pruned_percent": 71.6064453125
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.716064453125,
+            "zero_params": 12013568,
+            "total_params": 16777216,
+            "pruned_percent": 71.6064453125
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.716064453125,
+            "zero_params": 12013568,
+            "total_params": 16777216,
+            "pruned_percent": 71.6064453125
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.716064453125,
+            "zero_params": 12013568,
+            "total_params": 16777216,
+            "pruned_percent": 71.6064453125
+          }
+        ]
+      },
+      {
+        "layer_index": 18,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.71826171875,
+            "zero_params": 48201728,
+            "total_params": 67108864,
+            "pruned_percent": 71.826171875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.71826171875,
+            "zero_params": 48201728,
+            "total_params": 67108864,
+            "pruned_percent": 71.826171875
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.71826171875,
+            "zero_params": 12050432,
+            "total_params": 16777216,
+            "pruned_percent": 71.826171875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.71826171875,
+            "zero_params": 12050432,
+            "total_params": 16777216,
+            "pruned_percent": 71.826171875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.71826171875,
+            "zero_params": 12050432,
+            "total_params": 16777216,
+            "pruned_percent": 71.826171875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.71826171875,
+            "zero_params": 12050432,
+            "total_params": 16777216,
+            "pruned_percent": 71.826171875
+          }
+        ]
+      },
+      {
+        "layer_index": 19,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.719482421875,
+            "zero_params": 48283648,
+            "total_params": 67108864,
+            "pruned_percent": 71.9482421875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.71954345703125,
+            "zero_params": 48287744,
+            "total_params": 67108864,
+            "pruned_percent": 71.954345703125
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.719482421875,
+            "zero_params": 12070912,
+            "total_params": 16777216,
+            "pruned_percent": 71.9482421875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.719482421875,
+            "zero_params": 12070912,
+            "total_params": 16777216,
+            "pruned_percent": 71.9482421875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.719482421875,
+            "zero_params": 12070912,
+            "total_params": 16777216,
+            "pruned_percent": 71.9482421875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.719482421875,
+            "zero_params": 12070912,
+            "total_params": 16777216,
+            "pruned_percent": 71.9482421875
+          }
+        ]
+      },
+      {
+        "layer_index": 20,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.72216796875,
+            "zero_params": 48463872,
+            "total_params": 67108864,
+            "pruned_percent": 72.216796875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.72235107421875,
+            "zero_params": 48476160,
+            "total_params": 67108864,
+            "pruned_percent": 72.235107421875
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.72216796875,
+            "zero_params": 12115968,
+            "total_params": 16777216,
+            "pruned_percent": 72.216796875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.72216796875,
+            "zero_params": 12115968,
+            "total_params": 16777216,
+            "pruned_percent": 72.216796875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.72216796875,
+            "zero_params": 12115968,
+            "total_params": 16777216,
+            "pruned_percent": 72.216796875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.72216796875,
+            "zero_params": 12115968,
+            "total_params": 16777216,
+            "pruned_percent": 72.216796875
+          }
+        ]
+      },
+      {
+        "layer_index": 21,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.72509765625,
+            "zero_params": 48660480,
+            "total_params": 67108864,
+            "pruned_percent": 72.509765625
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.7252197265625,
+            "zero_params": 48668672,
+            "total_params": 67108864,
+            "pruned_percent": 72.52197265625
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.72509765625,
+            "zero_params": 12165120,
+            "total_params": 16777216,
+            "pruned_percent": 72.509765625
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.72509765625,
+            "zero_params": 12165120,
+            "total_params": 16777216,
+            "pruned_percent": 72.509765625
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.72509765625,
+            "zero_params": 12165120,
+            "total_params": 16777216,
+            "pruned_percent": 72.509765625
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.72509765625,
+            "zero_params": 12165120,
+            "total_params": 16777216,
+            "pruned_percent": 72.509765625
+          }
+        ]
+      },
+      {
+        "layer_index": 22,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.726806640625,
+            "zero_params": 48775168,
+            "total_params": 67108864,
+            "pruned_percent": 72.6806640625
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.72698974609375,
+            "zero_params": 48787456,
+            "total_params": 67108864,
+            "pruned_percent": 72.698974609375
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.726806640625,
+            "zero_params": 12193792,
+            "total_params": 16777216,
+            "pruned_percent": 72.6806640625
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.726806640625,
+            "zero_params": 12193792,
+            "total_params": 16777216,
+            "pruned_percent": 72.6806640625
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.726806640625,
+            "zero_params": 12193792,
+            "total_params": 16777216,
+            "pruned_percent": 72.6806640625
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.726806640625,
+            "zero_params": 12193792,
+            "total_params": 16777216,
+            "pruned_percent": 72.6806640625
+          }
+        ]
+      },
+      {
+        "layer_index": 23,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.72802734375,
+            "zero_params": 48857088,
+            "total_params": 67108864,
+            "pruned_percent": 72.802734375
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.72802734375,
+            "zero_params": 48857088,
+            "total_params": 67108864,
+            "pruned_percent": 72.802734375
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.72802734375,
+            "zero_params": 12214272,
+            "total_params": 16777216,
+            "pruned_percent": 72.802734375
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.72802734375,
+            "zero_params": 12214272,
+            "total_params": 16777216,
+            "pruned_percent": 72.802734375
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.72802734375,
+            "zero_params": 12214272,
+            "total_params": 16777216,
+            "pruned_percent": 72.802734375
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.72802734375,
+            "zero_params": 12214272,
+            "total_params": 16777216,
+            "pruned_percent": 72.802734375
+          }
+        ]
+      },
+      {
+        "layer_index": 24,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.7314453125,
+            "zero_params": 49086464,
+            "total_params": 67108864,
+            "pruned_percent": 73.14453125
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.7314453125,
+            "zero_params": 49086464,
+            "total_params": 67108864,
+            "pruned_percent": 73.14453125
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.7314453125,
+            "zero_params": 12271616,
+            "total_params": 16777216,
+            "pruned_percent": 73.14453125
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.7314453125,
+            "zero_params": 12271616,
+            "total_params": 16777216,
+            "pruned_percent": 73.14453125
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.7314453125,
+            "zero_params": 12271616,
+            "total_params": 16777216,
+            "pruned_percent": 73.14453125
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.7314453125,
+            "zero_params": 12271616,
+            "total_params": 16777216,
+            "pruned_percent": 73.14453125
+          }
+        ]
+      },
+      {
+        "layer_index": 25,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 49152000,
+            "total_params": 67108864,
+            "pruned_percent": 73.2421875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.7325439453125,
+            "zero_params": 49160192,
+            "total_params": 67108864,
+            "pruned_percent": 73.25439453125
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 12288000,
+            "total_params": 16777216,
+            "pruned_percent": 73.2421875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 12288000,
+            "total_params": 16777216,
+            "pruned_percent": 73.2421875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 12288000,
+            "total_params": 16777216,
+            "pruned_percent": 73.2421875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 12288000,
+            "total_params": 16777216,
+            "pruned_percent": 73.2421875
+          }
+        ]
+      },
+      {
+        "layer_index": 26,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 49201152,
+            "total_params": 67108864,
+            "pruned_percent": 73.3154296875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.73333740234375,
+            "zero_params": 49213440,
+            "total_params": 67108864,
+            "pruned_percent": 73.333740234375
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 12300288,
+            "total_params": 16777216,
+            "pruned_percent": 73.3154296875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 12300288,
+            "total_params": 16777216,
+            "pruned_percent": 73.3154296875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 12300288,
+            "total_params": 16777216,
+            "pruned_percent": 73.3154296875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 12300288,
+            "total_params": 16777216,
+            "pruned_percent": 73.3154296875
+          }
+        ]
+      },
+      {
+        "layer_index": 27,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 49201152,
+            "total_params": 67108864,
+            "pruned_percent": 73.3154296875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.73333740234375,
+            "zero_params": 49213440,
+            "total_params": 67108864,
+            "pruned_percent": 73.333740234375
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 12300288,
+            "total_params": 16777216,
+            "pruned_percent": 73.3154296875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 12300288,
+            "total_params": 16777216,
+            "pruned_percent": 73.3154296875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 12300288,
+            "total_params": 16777216,
+            "pruned_percent": 73.3154296875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.733154296875,
+            "zero_params": 12300288,
+            "total_params": 16777216,
+            "pruned_percent": 73.3154296875
+          }
+        ]
+      },
+      {
+        "layer_index": 28,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 49152000,
+            "total_params": 67108864,
+            "pruned_percent": 73.2421875
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.7325439453125,
+            "zero_params": 49160192,
+            "total_params": 67108864,
+            "pruned_percent": 73.25439453125
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 12288000,
+            "total_params": 16777216,
+            "pruned_percent": 73.2421875
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 12288000,
+            "total_params": 16777216,
+            "pruned_percent": 73.2421875
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 12288000,
+            "total_params": 16777216,
+            "pruned_percent": 73.2421875
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.732421875,
+            "zero_params": 12288000,
+            "total_params": 16777216,
+            "pruned_percent": 73.2421875
+          }
+        ]
+      },
+      {
+        "layer_index": 29,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.730712890625,
+            "zero_params": 49037312,
+            "total_params": 67108864,
+            "pruned_percent": 73.0712890625
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.73077392578125,
+            "zero_params": 49041408,
+            "total_params": 67108864,
+            "pruned_percent": 73.077392578125
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.730712890625,
+            "zero_params": 12259328,
+            "total_params": 16777216,
+            "pruned_percent": 73.0712890625
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.730712890625,
+            "zero_params": 12259328,
+            "total_params": 16777216,
+            "pruned_percent": 73.0712890625
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.730712890625,
+            "zero_params": 12259328,
+            "total_params": 16777216,
+            "pruned_percent": 73.0712890625
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.730712890625,
+            "zero_params": 12259328,
+            "total_params": 16777216,
+            "pruned_percent": 73.0712890625
+          }
+        ]
+      },
+      {
+        "layer_index": 30,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.72705078125,
+            "zero_params": 48791552,
+            "total_params": 67108864,
+            "pruned_percent": 72.705078125
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.72723388671875,
+            "zero_params": 48803840,
+            "total_params": 67108864,
+            "pruned_percent": 72.723388671875
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.72705078125,
+            "zero_params": 12197888,
+            "total_params": 16777216,
+            "pruned_percent": 72.705078125
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.72705078125,
+            "zero_params": 12197888,
+            "total_params": 16777216,
+            "pruned_percent": 72.705078125
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.72705078125,
+            "zero_params": 12197888,
+            "total_params": 16777216,
+            "pruned_percent": 72.705078125
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.72705078125,
+            "zero_params": 12197888,
+            "total_params": 16777216,
+            "pruned_percent": 72.705078125
+          }
+        ]
+      },
+      {
+        "layer_index": 31,
+        "submodules": [
+          {
+            "submodule": "fc1",
+            "sparsity_ratio": 0.7099609375,
+            "zero_params": 47644672,
+            "total_params": 67108864,
+            "pruned_percent": 70.99609375
+          },
+          {
+            "submodule": "fc2",
+            "sparsity_ratio": 0.7100830078125,
+            "zero_params": 47652864,
+            "total_params": 67108864,
+            "pruned_percent": 71.00830078125
+          },
+          {
+            "submodule": "self_attn.k_proj",
+            "sparsity_ratio": 0.7099609375,
+            "zero_params": 11911168,
+            "total_params": 16777216,
+            "pruned_percent": 70.99609375
+          },
+          {
+            "submodule": "self_attn.out_proj",
+            "sparsity_ratio": 0.7099609375,
+            "zero_params": 11911168,
+            "total_params": 16777216,
+            "pruned_percent": 70.99609375
+          },
+          {
+            "submodule": "self_attn.q_proj",
+            "sparsity_ratio": 0.7099609375,
+            "zero_params": 11911168,
+            "total_params": 16777216,
+            "pruned_percent": 70.99609375
+          },
+          {
+            "submodule": "self_attn.v_proj",
+            "sparsity_ratio": 0.7099609375,
+            "zero_params": 11911168,
+            "total_params": 16777216,
+            "pruned_percent": 70.99609375
+          }
+        ]
+      }
+    ],
+    "nsamples": 128,
+    "seed": 0,
+    "ppl_wikitext": 42.32341003417969,
+    "Lamda": 0.08,
+    "Hyper_m": 10.0,
+    "outlier_by_activation": false,
+    "outlier_by_wmetric": false
+  }
+]

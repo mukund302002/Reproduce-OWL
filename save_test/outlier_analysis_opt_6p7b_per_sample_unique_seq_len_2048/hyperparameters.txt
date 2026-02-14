@@ -1,0 +1,15 @@
+{
+  "model": "facebook/opt-6.7b",
+  "seed": 0,
+  "nsamples": 10,
+  "loaded_samples": 10,
+  "seqlen": 2048,
+  "dtype": "float16",
+  "threshold_mode": "mean",
+  "threshold_scale": 3.0,
+  "threshold_percentile": 99.5,
+  "bins": 80,
+  "per_sample": true,
+  "max_samples": 10,
+  "save_raw_json": false
+}
